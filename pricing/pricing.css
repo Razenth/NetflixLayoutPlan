@@ -82,3 +82,13 @@ body {
 .bd-mode-toggle {
   z-index: 1500;
 }
+
+:root{
+  --generalRed : #e50914;
+  --palidRed :
+}
+
+.btn-outline-primary{
+  border: 1px solid var(--generalRed);
+  color: black;
+}
