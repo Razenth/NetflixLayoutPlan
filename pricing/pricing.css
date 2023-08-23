@@ -90,5 +90,5 @@ body {
 
 .btn-outline-primary{
   border: 1px solid var(--generalRed);
-  color: black;
+  color: var(--generalRed);
 }
