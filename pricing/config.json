@@ -23,7 +23,40 @@
         ]
     },
 
-    "section1" : {
-        
+    "sectionCard" : {
+        "cards" : [
+            {
+                "title" : "Basic",
+                "price" : "$16,900",
+                "subPrice" : "/mo",
+                "info1" : "1 shared screens",
+                "info2" : "Video Quality Good",
+                "info3" : "Resolution 720p",
+                "info4" : "Help center access",
+                "buttonInfo" : "Free Trial"
+            },
+
+            {
+                "title" : "Standard",
+                "price" : "$26,900",
+                "subPrice" : "/mo",
+                "info1" : "3 shared screens",
+                "info2" : "Video Quality Better",
+                "info3" : "Resolution 1080p",
+                "info4" : "Help center access",
+                "buttonInfo" : "Get Started"
+            },
+
+            {
+                "title" : "Premium",
+                "price" : "$38,900",
+                "subPrice" : "/mo",
+                "info1" : "5 shared screens",
+                "info2" : "Video Quality Best",
+                "info3" : "Resolution 4K+HDR",
+                "info4" : "Help center access",
+                "buttonInfo" : "Contact Us"
+            }
+        ]
     }
 }

@@ -46,8 +46,29 @@ const path = "config";
     `)
 
     /** *
-     * ! ---- SECTION 1 ----
+     * ! ---- SECTION CARDS ----
     */
 
-    
+    let myCard = document.querySelector("#cards")
+    myCard.insertAdjacentHTML("beforeend", /*html*/
+        `
+        ${response.sectionCard.cards.map((value)=>`
+            <div class="col">
+                <div class="card mb-4 rounded-0 shadow-sm border-primary">
+                <div class="card-header py-3 rounded-0 text-bg-primary border-primary">
+                    <h4 class="my-0 fw-normal">${value.title}</h4>
+                </div>
+                <div class="card-body">
+                    <h1 class="card-title pricing-card-title">${value.price}<small class="text-body-secondary fw-light">${value.subPrice}</small></h1>
+                    <ul class="list-unstyled mt-3 mb-4">
+                    <li>${value.info1}</li>
+                    <li>${value.info2}</li>
+                    <li>${value.info3}</li>
+                    <li>${value.info4}</li>
+                    </ul>
+                    <button type="button" class="w-100 btn btn-lg btn-primary">Free Trial 30 days</button>
+                </div>
+                </div>
+            </div>`).join("")}
+        `)
 })(path)
