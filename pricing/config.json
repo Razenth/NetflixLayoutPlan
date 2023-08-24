@@ -1,5 +1,10 @@
 {
-    "section1" : {
+    "navbar" : {
+        "imgPath" : "../assets/brand/netflix-2-logo-svgrepo-com.svg",
+        "infoNav" : "Sign In"
+    },
+
+    "header" : {
         "title" : "Choose the plan that’s right for you",
         "parraf" : [
             {
@@ -16,5 +21,9 @@
                 "tagSvg" : "<svg class='bi me-1 bidiferent' width='24' height='24'><use xlink:href='#check'/></svg>"
             }
         ]
+    },
+
+    "section1" : {
+        
     }
 }
