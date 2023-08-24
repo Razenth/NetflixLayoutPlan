@@ -14,6 +14,7 @@
   <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="pricing.css" rel="stylesheet">
   <script src="../assets/dist/js/bootstrap.bundle.min.js" defer></script>
+  <script src="./main.js" defer></script>
 </head>
 
 <body>
@@ -38,7 +39,7 @@
   </svg>
 
   <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
-    <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center" id="bd-theme" type="button"
+    <button class="btn btn-primary py-2 dropdown-toggle d-flex align-items-center" id="bd-theme" type="button"
       aria-expanded="false" data-bs-toggle="dropdown" aria-label="Toggle theme (auto)">
       <svg class="bi my-1 theme-icon-active" width="1em" height="1em">
         <use href="#circle-half"></use>
@@ -98,7 +99,7 @@
     <header>
       <div class="d-flex flex-column flex-md-row align-items-center mb-4 border-bottom">
         <a href="https://www.netflix.com/co-en/" class="d-flex align-items-center link-body-emphasis text-decoration-none">
-          <svg width="auto" height="120" viewBox="0 -109.31 300 300" xmlns="http://www.w3.org/2000/svg">
+          <svg width="120" height="120" viewBox="0 -109.31 300 300" xmlns="http://www.w3.org/2000/svg">
             <g fill="#b81d24">
             <path d="M256.09 76.212c4.178.405 8.354.84 12.52 1.29l9.198-22.712 8.743 24.807c4.486.562 8.97 1.152 13.44 1.768l-15.328-43.501L299.996 0H287.01l-.135.186-8.283 20.455L271.32.003h-12.822l13.237 37.565-15.644 38.644zM246.393 75.322V0h-12.817v74.265c4.275.33 8.552.684 12.817 1.056M150.113 71.11c3.46 0 6.916.026 10.366.054V43.492h15.397V31.708H160.48v-19.91h17.733V0h-30.6v71.12c.831 0 1.666-.013 2.5-.01M110.319 71.83c4.27-.152 8.544-.28 12.824-.384V11.8h11.98V.003H98.339V11.8h11.982v60.03h-.002zM12.295 79.772V34.897L27.471 77.96c4.667-.524 9.341-1.017 14.028-1.483V.001H29.201v46.483L12.825.001H0v81.384h.077c4.063-.562 8.14-1.096 12.218-1.613M85.98 11.797V.001H55.377V75.202a1100.584 1100.584 0 0 1 30.578-2.211V61.184c-5.916.344-11.82.74-17.71 1.181V43.497h15.397V31.706H68.245V11.797H85.98zM203.614 60.62V-.003h-12.873v71.876c10.24.376 20.44.9 30.606 1.56V61.619c-5.9-.381-11.81-.712-17.733-1"/>
             </g>
@@ -111,38 +112,14 @@
         </nav>
       </div>
 
-      <div class="pricing-header p-3 pb-md-4 mx-auto text-start">
-        <h1 class="display-4 fw-medium text-body-emphasis fs-2">Choose the plan that’s right for you</h1>
-        <p class="fs-5 text-body-secondary text-start d-flex flex-column justify-content-start">
-          <div class="d-flex flex-row justify-content-start mb-2">
-            <td><svg class="bi me-1" width="24" height="24">
-              <use xlink:href="#check" />
-            </svg></td>
-            <th scope="row" class="text-start">Watch all you want. Ad-free.</th>
-          </div>
-          
-          <div class="d-flex flex-row justify-content-start mb-2">
-            <td><svg class="bi me-1" width="24" height="24">
-              <use xlink:href="#check" />
-            </svg></td>
-            <th scope="row" class="text-start">Recommendations just for you.</th>
-          </div>
-
-          <div class="d-flex flex-row justify-content-start mb-2">
-            <td><svg class="bi me-1" width="24" height="24">
-              <use xlink:href="#check" />
-            </svg></td>
-            <th scope="row" class="text-start">Change or cancel your plan anytime.</th>
-          </div>  
-        </p>
-      </div>
+      <div id='header' class="pricing-header p-3 pb-md-4 mx-auto text-start"></div>
     </header>
 
     <main>
       <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
         <div class="col">
-          <div class="card mb-4 rounded-3 shadow-sm">
-            <div class="card-header py-3">
+          <div class="card mb-4 rounded-0 shadow-sm border-primary">
+            <div class="card-header py-3 rounded-0 text-bg-primary border-primary">
               <h4 class="my-0 fw-normal">Basic</h4>
             </div>
             <div class="card-body">
@@ -153,13 +130,13 @@
                 <li>Resolution 720p</li>
                 <li>Help center access</li>
               </ul>
-              <button type="button" class="w-100 btn btn-lg btn-outline-primary">Free Trial 30 days</button>
+              <button type="button" class="w-100 btn btn-lg btn-primary">Free Trial 30 days</button>
             </div>
           </div>
         </div>
         <div class="col">
-          <div class="card mb-4 rounded-3 shadow-sm">
-            <div class="card-header py-3">
+          <div class="card mb-4 rounded-0 shadow-sm border-primary">
+            <div class="card-header py-3 rounded-0 text-bg-primary border-primary">
               <h4 class="my-0 fw-normal">Standard</h4>
             </div>
             <div class="card-body">
@@ -175,8 +152,8 @@
           </div>
         </div>
         <div class="col">
-          <div class="card mb-4 rounded-3 shadow-sm border-primary">
-            <div class="card-header py-3 text-bg-primary border-primary">
+          <div class="card mb-4 rounded-0 shadow-sm border-primary">
+            <div class="card-header py-3 rounded-0 text-bg-primary border-primary">
               <h4 class="my-0 fw-normal">Premium</h4>
             </div>
             <div class="card-body">
