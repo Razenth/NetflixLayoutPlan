@@ -66,9 +66,47 @@ const path = "config";
                     <li>${value.info3}</li>
                     <li>${value.info4}</li>
                     </ul>
-                    <button type="button" class="w-100 btn btn-lg btn-primary">Free Trial 30 days</button>
+                    <button type="button" class="w-100 btn btn-lg btn-primary">${value.buttonInfo}</button>
                 </div>
                 </div>
             </div>`).join("")}
         `)
+
+
+        /** *
+         * ! ---- SECTION PLANS ----
+        */
+
+        let myPlans = document.querySelector("#plans")
+        myPlans.insertAdjacentHTML("beforeend", /*html*/
+            `
+                <table class="table text-center">
+                <thead>
+                <tr>
+                    <th style="width: 34%;"></th>
+                    <th style="width: 22%;">${response.sectionPlans.thead.info1}</th>
+                    <th style="width: 22%;">${response.sectionPlans.thead.info2}</th>
+                    <th style="width: 22%;">${response.sectionPlans.thead.info3}</th>
+                </tr>
+                </thead>
+                <tbody>
+                    ${response.sectionPlans.tbody.map((value)=>`
+                    <tr>
+                        <th scope="row" class="text-start  fw-light">${value.title}</th>
+                        <td>
+                        ${value.info1}
+                        </td>
+                        <td>
+                        ${value.info2}
+                        </td>
+                        <td>
+                        ${value.info3}
+                        </td>
+                    </tr>
+                    `).join("")}
+                </tbody>
+                </table>
+            `)
+
 })(path)
+

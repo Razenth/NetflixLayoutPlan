@@ -58,5 +58,42 @@
                 "buttonInfo" : "Contact Us"
             }
         ]
+    },
+
+    "sectionPlans" : {
+        "thead" : {
+            "info1" : "Basic",
+            "info2" : "Standard",
+            "info3" : "Premium"
+        },
+        "tbody" : [
+            {
+                "title" : "Montly Price",
+                "info1" : "COP16,900",
+                "info2" : "COP26,900",
+                "info3" : "COP38,900"
+            },
+            {
+                "title" : "Video Quality",
+                "info1" : "Good",
+                "info2" : "Better",
+                "info3" : "Best" 
+            },
+            {
+              "title" : "Resolution",
+                "info1" : "720p",
+                "info2" : "1080p",
+                "info3" : "4K+HDR"   
+            },
+            {
+                "title" : "Watch on your TV, computer, mobile phone and tablet",
+                "info1" : "<svg class='bi' width='24' height='24'><use xlink:href='#check'/></svg>",
+                "info2" : "<svg class='bi' width='24' height='24'><use xlink:href='#check'/></svg>",
+                "info3" : "<svg class='bi' width='24' height='24'><use xlink:href='#check'/></svg>"
+            }
+        ]
+
     }
+
+
 }
