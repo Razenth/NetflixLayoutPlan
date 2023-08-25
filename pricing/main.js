@@ -108,5 +108,27 @@ const path = "config";
                 </table>
             `)
 
+        /** *
+         * ! ---- FOOTER ----
+        */
+
+        let myFooter = document.querySelector("#footer")
+        myFooter.insertAdjacentHTML("beforeend", /*html*/
+            `
+                <div class="row">
+                    <div class="col-12 col-md">
+                        <img src="${response.footer.headFooter.imgPath}" alt="" style="height: auto; width: 25px;">
+                        <small class="d-block mb-3 text-body-secondary">&copy; ${response.footer.headFooter.info}</small>
+                    </div>
+                    ${response.footer.bodyFooter.map((value)=>`
+                    <div class="col-12 col-md">
+                        <ul class="list-unstyled text-small fw-light">
+                            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">${value.li1}</a></li>
+                            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">${value.li2}</a></li>
+                        </ul>
+                    </div>
+                    `).join("")}
+                </div>
+            `)
 })(path)
 

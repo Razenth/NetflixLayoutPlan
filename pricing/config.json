@@ -22,7 +22,6 @@
             }
         ]
     },
-
     "sectionCard" : {
         "cards" : [
             {
@@ -59,7 +58,6 @@
             }
         ]
     },
-
     "sectionPlans" : {
         "thead" : {
             "info1" : "Basic",
@@ -92,7 +90,31 @@
                 "info3" : "<svg class='bi' width='24' height='24'><use xlink:href='#check'/></svg>"
             }
         ]
+    },
+    "footer" : {
+        "headFooter" : {
+            "imgPath" : "../assets/brand/netflix-1-logo-svgrepo-com.svg",
+            "info" : "Campuslands 2023 Bucaramanga"
+        },
 
+        "bodyFooter" : [
+            {
+                "li1" : "FAQ",
+                "li2" : "Privacy"
+            },
+            {
+                "li1" : "Help Center",
+                "li2" : "Cookie Preferences"
+            },
+            {
+                "li1" : "Netflix Shop",
+                "li2" : "Corporate Info"
+            },
+            {
+                "li1" : "Terms of Use",
+                "li2" : ""
+            }
+        ]
     }
 
 
